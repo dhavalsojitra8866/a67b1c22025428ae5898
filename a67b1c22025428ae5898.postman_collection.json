@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "cbe7724e-4c2e-46ee-b9e8-788b15806ce1",
+		"name": "a67b1c22025428ae5898",
+		"description": "Assignment for Node.js",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Task No. 4",
+			"item": [
+				{
+					"name": "returns all users from users table",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users"
+							]
+						},
+						"description": "GET /api/users - returns all users from users table"
+					},
+					"response": []
+				},
+				{
+					"name": "returns specific user from users table given id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/users/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"5"
+							]
+						},
+						"description": "GET /api/user/:id - returns specific user from users table given id"
+					},
+					"response": []
+				},
+				{
+					"name": "adds a new user to the users table",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"firstName\": \"dhaval\",\r\n        \"lastName\": \"sojitra\",\r\n        \"email\": \"dvl@gmail.com\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user"
+							]
+						},
+						"description": "POST /api/user - adds a new user to the users table"
+					},
+					"response": []
+				},
+				{
+					"name": "updates specific user in users table",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"test\",\r\n    \"lastName\":\"testl\",\r\n    \"email\":\"test@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/users/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"6"
+							]
+						},
+						"description": " PUT /api/user/:id - updates specific user in users table"
+					},
+					"response": []
+				},
+				{
+					"name": "removes the specific user from users table with the given id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/users/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"2"
+							]
+						},
+						"description": "DELETE /api/user/:id - removes the specific user from users table with the given id"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Task No. 5",
+			"item": [
+				{
+					"name": "depending on input, returns entry from users table",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/typeahead/iss",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"typeahead",
+								"iss"
+							]
+						},
+						"description": "GET /api/typeahead/:input - depending on input, returns entry from users table."
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
