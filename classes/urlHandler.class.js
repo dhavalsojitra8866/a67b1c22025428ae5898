@@ -11,7 +11,7 @@ module.exports = {
             extended: true
         }));
 
-        //GET All users data
+        //GET returns all users from users table
         app.get('/api/users', async function (req, res) {
             var all = await databaseClass.findDataNew('users', {}, {_id:0}, {}, 0, 0);
             console.log("find ---->",all);
@@ -23,7 +23,7 @@ module.exports = {
             res.send(resp);
         });
 
-        //GET user based on ids
+        //GET returns specific user from users table given id
         app.get('/api/users/:id', async function (req, res) {
             console.log("params --->",req.params)
             const id = Number(req.params.id);
