@@ -3,12 +3,6 @@ module.exports = {
 
     BindWithCluster: function () {
 
-        var selfInst = this;
-        app.use(express.static('./views'));
-        app.set('view engine', 'html');
-        // if (Number(SERVER_PORT) == 443) {
-        app.set('views', './views');
-
         app.use(bodyParser.json({
             limit: '50mb'
         }));
